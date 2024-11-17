@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/ruby-3_2-wasm-wasi@next/dist/browser.script.iife.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+  <script type="text/ruby" src="https://raw.githubusercontent.com/ksbmyk/sketch/main/public/p5.rb"></script>
+  <script type="text/ruby">
+    def setup
+      createCanvas(500, 500)
+      background("#D7D2D0")
+    end
+
+    def draw
+      translate(width / 2, height / 2)
+      rotate(PI / 2)
+
+      stroke(0)
+      fill("#000505")
+      keigionrails2024symbol
+    end
+
+    def keigionrails2024symbol
+      # Kaigi on Rails2024 Ruby Shape
+      beginShape()
+      vertex(-55, 35)
+      vertex(-55, -35)
+      vertex(0, -65)
+      vertex(63, 0)
+      vertex(0, 65)
+      endShape(CLOSE)
+
+      # spotlight for Rubyist
+      beginShape()
+      vertex(-55, -10)
+      vertex(38, 25)
+      vertex(0, 65)
+      fill("#FF4053")
+      endShape(CLOSE)
+
+      # Ariakeblue spotlight
+      beginShape()
+      vertex(-55, -10)
+      vertex(0, -65)
+      vertex(33, -30)
+      fill("#00C5DA")
+      endShape(CLOSE)
+    end
+
+    P5::init()
+  </script>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .main {
+      margin-top: 34px;
+      margin-right: 20px;
+      flex-basis: 500px;
+    }
+
+    .code {
+      flex-basis: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <main class="main">
+    </main>
+
+    <pre class="code">
+      <code class="language-ruby">
+def setup
+  createCanvas(500, 500)
+  background("#D7D2D0")
+end
+
+def draw
+  translate(width / 2, height / 2)
+  rotate(PI / 2)
+
+  stroke(0)
+  fill("#000505")
+  keigionrails2024symbol
+end
+
+def keigionrails2024symbol
+  # Kaigi on Rails2024 Ruby Shape
+  beginShape()
+  vertex(-55, 35)
+  vertex(-55, -35)
+  vertex(0, -65)
+  vertex(63, 0)
+  vertex(0, 65)
+  endShape(CLOSE)
+
+  # spotlight for Rubyist
+  beginShape()
+  vertex(-55, -10)
+  vertex(38, 25)
+  vertex(0, 65)
+  fill("#FF4053")
+  endShape(CLOSE)
+
+  # Ariakeblue spotlight
+  beginShape()
+  vertex(-55, -10)
+  vertex(0, -65)
+  vertex(33, -30)
+  fill("#00C5DA")
+  endShape(CLOSE)
+end
+
+P5::init()
+      </code>
+    </pre>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>
+    // ハイライトを実行
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+
+</html>
